@@ -228,6 +228,28 @@ img {
   color: #8a8a89;
 }
 
+.feature__card {
+  padding: 15px 4px;
+}
+
+.feature__card-body {
+  padding: 0;
+}
+
+.card__heading {
+  font-size: var(--text-base);
+  margin-top: 0.6em;
+}
+
+.card__subheading {
+  font-size: var(--text-xs);
+}
+
+.fa-money-bill {
+  font-size: var(--text-2xl);
+  color: var(--color-1);
+}
+
 /* media query */
 
 /* xs */
