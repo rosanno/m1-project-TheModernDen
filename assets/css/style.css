@@ -238,6 +238,7 @@ img {
 
 .card__heading {
   font-size: var(--text-base);
+  font-weight: 600;
   margin-top: 0.6em;
 }
 
@@ -341,5 +342,18 @@ img {
 
   .feature__heading {
     font-size: var(--text-lg);
+  }
+
+  .card__heading {
+    font-size: var(--text-xl);
+    margin-top: 0.6em;
+  }
+
+  .card__subheading {
+    font-size: var(--text-sm);
+  }
+
+  .fa-money-bill {
+    font-size: var(--text-3xl);
   }
 }
