@@ -15,6 +15,7 @@
 
 /* 2xl */
 /* @media (min-width: 1536px) {} */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
   /* colors */
@@ -35,6 +36,14 @@
   --text-7xl: 4.5rem;
   --text-8xl: 6rem;
   --text-9xl: 8rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 /* reusable style */
@@ -184,7 +193,7 @@ img {
 }
 
 .hero__heading {
-  font-size: 2rem;
+  font-size: var(--text-2xl);
   font-weight: 700;
 }
 
@@ -345,7 +354,7 @@ img {
   }
 
   .card__heading {
-    font-size: var(--text-xl);
+    font-size: var(--text-lg);
     margin-top: 0.6em;
   }
 
@@ -355,5 +364,28 @@ img {
 
   .fa-money-bill {
     font-size: var(--text-3xl);
+  }
+
+  .fa-magnifying-glass,
+  .fa-cart-shopping {
+    font-size: var(--text-base);
+    color: var(--color-1);
+  }
+
+  .fa-cart-shopping {
+    position: relative;
+  }
+
+  .cart__item-count {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    padding: 0px 5px;
+    border-radius: 30px;
+    font-size: var(--text-xs);
+  }
+
+  .right__nav {
+    padding: 0;
   }
 }
