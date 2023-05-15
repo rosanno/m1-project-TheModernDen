@@ -39,7 +39,6 @@
   --text-9xl: 8rem;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -343,6 +342,40 @@ header {
   width: 100%;
 }
 
+/* blogs section style */
+.blogs {
+  margin-top: 4em;
+}
+
+.blog__subheading,
+.read__more-link {
+  color: var(--text-color-1);
+}
+
+.blog__subheading {
+  font-size: var(--text-xs);
+}
+
+.read__more-link {
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.chevron-right {
+  width: 20px;
+  height: 20px;
+  color: #25385d;
+}
+
+.blog__img {
+  width: 480px;
+}
+
+.blog__img > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
 /* media query */
 
@@ -454,6 +487,11 @@ header {
     font-size: var(--text-sm);
   }
 
+  .card__btn:hover {
+    background-color: #25385d;
+    color: #fff;
+  }
+
   .fa-money-bill {
     font-size: var(--text-3xl);
   }
@@ -479,5 +517,9 @@ header {
   .product__card-img {
     width: 240px;
     height: 240px;
+  }
+
+  .blog__img {
+    width: 240px;
   }
 }
