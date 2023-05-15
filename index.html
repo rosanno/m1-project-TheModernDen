@@ -20,8 +20,8 @@
   </head>
   <body>
     <!-- header start -->
-    <header class="container-md">
-      <nav class="navbar navbar-expand-lg py-3">
+    <header class="fixed-top shadow">
+      <nav class="navbar navbar-expand-lg container-md p-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="#home">Modern<span>Den</span></a>
           <button
@@ -38,7 +38,7 @@
             <span class="toggler-icon bottom-bar"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto ">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
@@ -47,6 +47,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blogs</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About us</a>
@@ -62,7 +65,7 @@
                 ></a>
               </li>
               <li class="nav-item right__nav">
-                <a class="nav-link" href="#"
+                <a class="nav-link icon-link" href="#"
                   ><i class="fa-solid fa-cart-shopping"></i>
                   <span class="cart__item-count bg-danger text-white">0</span>
                 </a>
@@ -74,7 +77,7 @@
     </header>
     <!-- header end -->
 
-    <main>
+    <main class="main">
       <!-- hero section -->
       <section class="hero d-flex container-md px-4" id="home">
         <div class="hero__left custom-card">
@@ -83,10 +86,10 @@
             We help you to create organize your room to be more cozy, design by
             professional interior designer
           </p>
-          <button class="btn hero__btn">buy now</button>
+          <button class="btn custom__btn hero__btn">buy now</button>
         </div>
         <div class="hero__right">
-          <img src="./assets/img/hero-img.jpg" alt="" />
+          <img src="./assets/img/hero-img.jpg" class="hero__img" alt="" />
         </div>
       </section>
       <!-- hero section end -->
@@ -112,7 +115,7 @@
           </div>
         </div>
         <div class="feature__deals container-md mt-lg-5">
-          <h2 class="text-center">Hot Deals For You</h2>
+          <h2 class="text-center heading">Hot Deals For You</h2>
           <p class="text-center feature__subheading">
             Online shopping for retail sales direct to consumers
           </p>
@@ -164,6 +167,88 @@
           </div>
         </div>
       </section>
+
+      <!-- Product section -->
+      <section class="products container-md" id="products">
+        <div class="d-flex align-items-center justify-content-between px-2">
+          <h1 class="heading">Products</h1>
+          <a href="" class="see__all-btn nav-link d-flex align-items-center gap-2"
+            >See All
+              <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="arrow__icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="d-flex justify-content-center align-items-center gap-2 mt-3">
+          <button class="btn filter__btn btn__active">All</button>
+          <button class="btn filter__btn">Bed</button>
+          <button class="btn filter__btn">Sofa</button>
+          <button class="btn filter__btn">Chairs</button>
+          <button class="btn filter__btn">Lights</button>
+        </div>
+        <div class="row gap-4 align-items-center justify-content-center justify-content-sm-center justify-content-md-start product__wrap px-4 mt-4">
+          <div class="card col-12 col-sm-5 col-lg-3 product__card">
+            <img src="./assets/img/chair1.png" class="card-img-top product__card-img" alt="">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title m-0 custom-title">Accent Chair</h5>
+                <span class="product__card-price">₱10,900</span>
+              </div>
+              <button class="btn card__btn">
+                Add to cart                
+              </button>
+            </div>
+          </div>
+          <div class="card col-12 col-sm-5 col-lg-3 product__card">
+            <img src="./assets/img/Modern-brown-chair-isolated-on-transparent-background-PNG.png" class="card-img-top product__card-img" alt="">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title m-0 custom-title">Accent Chair</h5>
+                <span class="product__card-price">₱12,900</span>
+              </div>
+              <button class="btn card__btn">
+                Add to cart                
+              </button>
+            </div>
+          </div>
+          <div class="card col-12 col-sm-5 col-lg-3 product__card">
+            <img src="./assets/img/table-lamp.png" class="card-img-top product__card-img" alt="">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title m-0 custom-title">Table Lamp</h5>
+                <span class="product__card-price">₱9,880</span>
+              </div>
+              <button class="btn card__btn">
+                Add to cart                
+              </button>
+            </div>
+          </div>
+          <div class="card col-12 col-sm-5 col-lg-3 product__card">
+            <img src="./assets/img/table-lamp2.png" class="card-img-top product__card-img" alt="">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title m-0 custom-title">Table Lamp</h5>
+                <span class="product__card-price">₱11,450</span>
+              </div>
+              <button class="btn card__btn">
+                Add to cart                
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+     <!-- Product section end -->
     </main>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
