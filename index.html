@@ -22,8 +22,8 @@
   </head>
   <body>
     <!-- header start -->
-    <header class="fixed-top shadow">
-      <nav class="navbar navbar-expand-lg container-md p-3">
+    <header class="fixed-top shadow-sm">
+      <nav class="navbar navbar-expand-lg container-md p-2 p-lg-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="#home">Modern<span>Den</span></a>
           <button
@@ -102,17 +102,28 @@
           <div
             class="row justify-content-between align-items-center container-md mx-auto py-3 py-lg-4 px-3"
           >
-            <div class="d-flex align-items-center gap-2 gap-lg-3 col-3">
-              <i class="fa-solid fa-truck"></i>
-              <h4 class="feature__heading">Free Delivery</h4>
+            <div class="d-flex align-items-center justify-content-center gap-2 gap-lg-3 col-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-truck">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5">
+
+                </circle><circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+              <span class="feature__heading">Free Delivery</span>
             </div>
-            <div class="d-flex align-items-center gap-2 gap-lg-3 col-3">
-              <i class="fa-solid fa-phone"></i>
-              <h4 class="feature__heading">Support 24/7</h4>
+            <div class="d-flex align-items-center justify-content-center gap-2 gap-lg-3 col-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-headphones">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+              </svg>
+              <span class="feature__heading">Support 24/7</span>
             </div>
-            <div class="d-flex align-items-center gap-2 gap-lg-3 col-3">
-              <i class="fa-solid fa-shield"></i>
-              <h4 class="feature__heading">100% Authentic</h4>
+            <div class="d-flex align-items-center justify-content-center gap-2 gap-lg-3 col-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shield">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span class="feature__heading">100% Authentic</span>
             </div>
           </div>
         </div>
@@ -192,7 +203,7 @@
             </svg>
           </a>
         </div>
-        <div class="d-flex justify-content-center align-items-center gap-2 mt-3">
+        <div class="d-flex justify-content-center align-items-center gap-2 gap-lg-4 mt-3">
           <button class="btn filter__btn btn__active">All</button>
           <button class="btn filter__btn">Bed</button>
           <button class="btn filter__btn">Sofa</button>
@@ -254,11 +265,32 @@
 
      <!-- Blogs section -->
      <section class="blogs container-md px-4" id="blogs">
-      <div class="d-flex flex-column flex-lg-row-reverse">
-        <div>
-          <h2 class="text-center">Our best interiors that we provide for you</h2>
+      <div class="d-flex align-items-center gap-lg-4 flex-column flex-lg-row-reverse">
+        <div class="overflow-hidden w-100">
+          <h2 class="heading">Our best interiors that we <br> provide for you</h2>
+          <div id="carouselExampleFade" class="carousel overflow-hidden rounded-3 slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner carousel-blogs-inner">
+              <div class="carousel-item active">
+                <img src="./assets/img/room1.jpg" class="d-block w-100 carousel-blog-item" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/room2.jpg" class="d-block w-100 carousel-blog-item" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/room3.jpg" class="d-block w-100 carousel-blog-item" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
-        <div class="d-flex flex-column mt-4 mt-lg-5 gap-3">
+        <div class="d-flex flex-column mt-4 mt-lg-5 gap-3 gap-lg-4">
           <div class="d-flex gap-3">
             <div class="blog__img rounded-2 overflow-hidden">
               <img src="./assets/img/living-room.jpg" class="img-fluid" alt="">
