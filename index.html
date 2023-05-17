@@ -51,10 +51,10 @@
                 <a class="nav-link" href="#products">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blogs</a>
+                <a class="nav-link" href="#blogs">Blogs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="#about">About us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
@@ -267,8 +267,8 @@
      <section class="blogs container-md px-4" id="blogs">
       <div class="d-flex gap-lg-4 flex-column flex-lg-row-reverse">
         <div class="overflow-hidden w-100">
-          <h2 class="heading">Our best interiors that we <br> provide for you</h2>
-          <div id="carouselExampleFade" class="carousel overflow-hidden rounded-3 slide carousel-fade" data-bs-ride="carousel">
+          <h2 class="heading mb-4">Our best interiors that we <br> provide for you</h2>
+          <div id="carouselExampleFade" class="carousel carousel-blog overflow-hidden rounded-3 slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner carousel-blogs-inner">
               <div class="carousel-item active">
                 <img src="./assets/img/room1.jpg" class="d-block w-100 carousel-blog-item" alt="...">
@@ -280,14 +280,14 @@
                 <img src="./assets/img/room3.jpg" class="d-block w-100 carousel-blog-item" alt="...">
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <a class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            </a>
+            <a class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
-            </button>
+            </a>
           </div>
         </div>
         <div class="d-flex flex-column mt-4 mt-lg-5 gap-3 gap-lg-4">
@@ -355,7 +355,28 @@
       </div>
      </section>
      <!-- Blogs section end -->
-    </main>
+
+     <!-- About section -->
+     <section class="about container-md" id="about">
+       <div class="d-flex flex-column flex-lg-row-reverse gap-lg-4 gap-xl-3 w-100">
+         <div class="w-100">
+          <h2 class="heading">About Us</h2>
+          <p class="about-subheading">   
+            Welcome to our furniture website, where style meets functionality to transform your living spaces into stunning 
+            havens of comfort and elegance. We are passionate about helping you create the perfect ambiance for your home 
+            with our exquisite collection of furniture pieces. Whether you're looking for timeless classics or contemporary 
+            designs, our diverse range caters to every taste and preference. From luxurious sofas and elegant dining sets 
+            to sleek bedroom furniture and innovative storage solutions, 
+            we offer an extensive selection to enhance every room.
+          </p>
+         </div>
+         <div class="w-100">
+          <img src="./assets/img/room-bg.jpg" alt="" class="img-fluid about__img overflow-hidden rounded-3">
+         </div>
+       </div>
+     </section>
+     <!-- About section end -->    
+  </main>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
   </body>
