@@ -72,6 +72,7 @@ header {
 }
 
 .heading {
+  font-size: var(--text-2xl);
   font-weight: 600;
 }
 
@@ -265,10 +266,6 @@ header {
 .feature__card {
   width: 10rem;
   padding: 15px 4px;
-}
-
-.feature__card-body {
-  padding: 0;
 }
 
 .card__heading {
@@ -476,6 +473,10 @@ header {
     font-size: 2.5rem;
   }
 
+  .feature__card {
+    width: 13rem;
+  }
+
   .feather-truck,
   .feather-headphones,
   .feather-shield {
@@ -496,6 +497,10 @@ header {
 @media (min-width: 640px) {
   .custom-card {
     width: 80%;
+  }
+
+  .feature__card {
+    width: 18rem;
   }
 
   .feather-truck,
@@ -533,8 +538,16 @@ header {
     height: 30px;
   }
 
+  .feature__card {
+    width: 10rem;
+  }
+
   .feature__heading {
     font-size: var(--text-sm);
+  }
+
+  .card__subheading {
+    font-size: var(--text-xs);
   }
 
   .carousel-blog-item {
@@ -548,6 +561,10 @@ header {
 
 /* lg */
 @media (min-width: 1024px) {
+  .heading {
+    font-size: var(--text-3xl);
+  }
+
   .nav-item {
     padding: 0 10px;
   }
@@ -585,7 +602,7 @@ header {
   }
 
   .feature__card {
-    width: 15rem;
+    width: 12rem;
   }
 
   .feature,
@@ -683,12 +700,20 @@ header {
 }
 
 @media (min-width: 1280px) {
+  .heading {
+    font-size: var(--text-3xl);
+  }
+
   .feature,
   .products,
   .blogs,
   .about,
   .footer {
     margin-top: 8em;
+  }
+
+  .feature__card {
+    width: 18rem;
   }
 
   .about-subheading {
@@ -702,6 +727,10 @@ header {
 
   .subscribe-form-wrapper {
     width: 45%;
+  }
+
+  .copyright__text {
+    font-size: var(--text-sm);
   }
 
   .footer__heading {
