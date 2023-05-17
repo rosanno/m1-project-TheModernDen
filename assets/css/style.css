@@ -55,6 +55,12 @@ header {
 }
 
 /* reusable style */
+.blogs,
+.about,
+.subscribe {
+  margin-top: 4em;
+}
+
 .custom__btn {
   background-color: var(--color-1);
   color: #fff;
@@ -326,11 +332,6 @@ header {
 }
 
 /* blogs section style */
-.blogs,
-.about {
-  margin-top: 4em;
-}
-
 .blog__subheading,
 .read__more-link {
   color: var(--text-color-1);
@@ -363,10 +364,15 @@ header {
 
 .carousel-blog .carousel-control-prev,
 .carousel-blog .carousel-control-next {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   bottom: 30px !important;
   top: auto;
+}
+
+.carousel-blog .carousel-control-prev,
+.carousel-blog .carousel-control-next {
+  background-color: rgba(241, 241, 241, 0.8);
 }
 
 .carousel-blog .carousel-control-prev {
@@ -385,6 +391,43 @@ header {
 .about-subheading {
   font-size: var(--text-xs);
   color: var(--text-color-1);
+}
+
+/* subscribe section style */
+.subscribe__btn {
+  background-color: var(--color-1);
+  color: var(--text-color-2);
+  font-size: var(--text-xs);
+}
+
+.subscribe__subheading {
+  font-size: var(--text-xs);
+  color: var(--text-color-1);
+}
+
+.subscribe-form {
+  font-size: var(--text-sm);
+}
+
+.subscribe-container {
+  background-color: #d6e3ff;
+}
+
+.subscribe-form-wrapper {
+  width: 100%;
+}
+
+.subscribe-form-wrapper {
+  background-color: var(--color-2);
+}
+
+.subscribe-form-wrapper .form-control {
+  border: 0;
+}
+
+.subscribe-form-wrapper .form-control:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 /* media query */
@@ -600,5 +643,13 @@ header {
   .about-subheading {
     font-size: var(--text-base);
     line-height: 1.8;
+  }
+
+  .subscribe__subheading {
+    font-size: var(--text-sm);
+  }
+
+  .subscribe-form-wrapper {
+    width: 45%;
   }
 }
