@@ -317,10 +317,6 @@ header {
   font-size: var(--text-sm);
 }
 
-.product__card {
-  width: 18rem;
-}
-
 .card__btn {
   background-color: var(--color-1);
   color: #fff;
@@ -660,13 +656,9 @@ header {
     font-size: var(--text-base);
   }
 
-  .product__card {
-    width: 18rem;
-  }
-
   .product__card-img {
-    width: 240px;
-    height: 240px;
+    width: 210px;
+    height: 150px;
   }
 
   .blog__img {
@@ -702,6 +694,11 @@ header {
 @media (min-width: 1280px) {
   .heading {
     font-size: var(--text-3xl);
+  }
+
+  .product__card-img {
+    width: 250px;
+    height: 210px;
   }
 
   .feature,
