@@ -263,11 +263,6 @@ header {
   color: #8a8a89;
 }
 
-.feature__card {
-  width: 10rem;
-  padding: 15px 4px;
-}
-
 .card__heading {
   font-size: var(--text-base);
   font-weight: 600;
@@ -303,7 +298,7 @@ header {
 
 .product__card-img {
   width: 230px;
-  height: 210px;
+  height: 170px;
   object-fit: contain;
   margin: 0 auto;
 }
@@ -469,15 +464,16 @@ header {
     font-size: 2.5rem;
   }
 
-  .feature__card {
-    width: 13rem;
-  }
-
   .feather-truck,
   .feather-headphones,
   .feather-shield {
     width: 30px;
     height: 30px;
+  }
+
+  .product__card-img {
+    width: 230px;
+    height: 240px;
   }
 
   .carousel-blog-item {
@@ -493,10 +489,6 @@ header {
 @media (min-width: 640px) {
   .custom-card {
     width: 80%;
-  }
-
-  .feature__card {
-    width: 18rem;
   }
 
   .feather-truck,
@@ -521,6 +513,11 @@ header {
     padding: 0 10px;
   }
 
+  .product__card-img {
+    width: 130px;
+    height: 180px;
+  }
+
   .feature,
   .products,
   .blogs {
@@ -532,10 +529,6 @@ header {
   .feather-shield {
     width: 30px;
     height: 30px;
-  }
-
-  .feature__card {
-    width: 10rem;
   }
 
   .feature__heading {
@@ -595,10 +588,6 @@ header {
   .hero__btn {
     font-size: var(--text-base);
     margin-top: 0.9em;
-  }
-
-  .feature__card {
-    width: 12rem;
   }
 
   .feature,
@@ -707,10 +696,6 @@ header {
   .about,
   .footer {
     margin-top: 8em;
-  }
-
-  .feature__card {
-    width: 18rem;
   }
 
   .about-subheading {
