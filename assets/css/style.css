@@ -383,6 +383,11 @@ header {
   color: var(--text-color-1);
 }
 
+/* Testimonial section */
+.testimonial-img {
+  width: 150px;
+}
+
 /* subscribe section style */
 .subscribe__btn {
   background-color: var(--color-1);
