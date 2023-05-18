@@ -57,6 +57,7 @@ header {
 /* reusable style */
 .blogs,
 .about,
+.testimonials,
 .subscribe,
 .footer {
   margin-top: 4em;
@@ -694,6 +695,7 @@ header {
   .products,
   .blogs,
   .about,
+  .testimonials,
   .footer {
     margin-top: 8em;
   }
