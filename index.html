@@ -23,7 +23,7 @@
   <body>
 
     <!-- header start -->
-    <header class="fixed-top shadow-sm">
+    <header class="fixed-top shadow-sm header">
       <nav class="navbar navbar-expand-lg container-md p-2 p-lg-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="#home">Modern<span>Den</span></a>
@@ -61,14 +61,9 @@
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item right__nav">
-                <button class="btn p-0 me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                  </svg>
-                </button>
+            <ul class="navbar-nav ms-auto d-lg-flex align-items-lg-center">
+              <li class="nav-item right__nav login-item">
+                <a href="login.html" class="nav-link login-link">Sign in</a>
               </li>
               <li class="nav-item right__nav">
                 <a class="nav-link icon-link" href="#"
@@ -198,7 +193,7 @@
       <section class="products container-md" id="products">
         <div class="d-flex align-items-center justify-content-between px-4">
           <h2 class="heading">Products</h2>
-          <a href="" class="see__all-btn nav-link d-flex align-items-center gap-2"
+          <a href="shop.html" class="see__all-btn nav-link d-flex align-items-center gap-2"
             >See All
               <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -490,7 +485,7 @@
      <!-- Testimonials section end -->
 
      <!-- Subscribe section -->
-     <section class="subscribe container-md px-4" id="subscribe">
+     <section class="subscribe container-md px-4 mb-5" id="subscribe">
        <div class="subscribe-container p-4 rounded-3 d-flex flex-column justify-content-center align-items-center">
           <div>
             <h3 class="text-center heading">Let's keep in touch</h3>
@@ -606,72 +601,6 @@
       </div>
      </footer>
      <!-- footer end -->
-
-     <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog form-modal">
-          <div class="modal-content">
-            <div class="modal-body">
-              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
-                </li>
-              </ul>
-              <div class="tab-content container-md" id="pills-tabContent">
-                
-                <!-- Login form -->
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                  <form>
-                    <div class="form-floating mb-3">
-                      <input type="email" class="form-control login-input" placeholder="email addres">
-                      <label for="floatingInput">
-                          Email address
-                      </label>
-                    </div>
-                
-                    <div class="form-floating mb-3">
-                      <input type="email" class="form-control login-input" placeholder="password">
-                      <label for="floatingInput">
-                          Password
-                      </label>
-                    </div>
-                    <button type="submit" class="btn custom-btn px-4">Login</button>
-                  </form>
-                </div>
-                <!-- Login form end -->
-
-                <!-- Sign Up form -->
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                  <form>
-                    <div class="mb-3">
-                      <label for="firstName" class="form-label">First Name</label>
-                      <input type="text" class="form-control" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                      <label for="lastName" class="form-label">Last Name</label>
-                      <input type="text" class="form-control" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Sign Up</button>
-                  </form>
-                </div>
-                <!-- Sign Up form end -->
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
   </main>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
