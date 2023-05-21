@@ -621,7 +621,7 @@ section {
   padding: 0;
 }
 
-.footer__list li a {
+.footer__list li a, .address {
   text-decoration: none;
   font-size: 0.75rem;
   color: #d1d1cd;
