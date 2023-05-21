@@ -21,15 +21,6 @@
   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
 }
 
-.side-image {
-  background-image: url("https://images.pexels.com/photos/1669799/pexels-photo-1669799.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  border-radius: 10px 0 0 10px;
-}
-
 .login-card-body {
   display: flex;
   justify-content: center;

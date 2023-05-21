@@ -72,15 +72,6 @@ section {
   width: 90px;
 }
 
-.login-link,
-.login-link:hover {
-  border-radius: 20px;
-}
-
-.login-link:hover {
-  background-color: #f4f0f0;
-}
-
 /* Navbar toggler custom style */
 .navbar-toggler {
   width: 20px;
@@ -211,6 +202,7 @@ section {
   font-size: 0.8rem;
   padding: 0.6em 2em;
   border-radius: 20px;
+  text-decoration: none;
 }
 
 .hero__btn:hover {
@@ -380,10 +372,15 @@ section {
 }
 
 /* subscribe section style */
-.subscribe__btn {
+.subscribe--btn {
   background-color: var(--color-1);
   color: var(--text-color-2);
   font-size: 0.75rem;
+}
+
+.subscribe--btn:hover {
+  background-color: #25385d;
+  color: var(--color-2);
 }
 
 .subscribe__subheading {
@@ -608,6 +605,12 @@ section {
   cursor: pointer;
 }
 
+/* cart style */
+.cart-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 /* footer styles */
 .footer {
   background-color: #25385d;
@@ -759,6 +762,21 @@ section {
     padding: 0 10px;
   }
 
+  .login-item {
+    text-align: center;
+    width: 90px;
+  }
+
+  .login-link,
+  .login-link:hover {
+    border-radius: 20px;
+    padding: 7px;
+  }
+
+  .login-link:hover {
+    background-color: #f4f0f0;
+  }
+
   .hero {
     flex-direction: row;
     justify-content: center;
@@ -892,6 +910,10 @@ section {
   .login-link:hover {
     border-radius: 20px;
     padding: 7px;
+  }
+
+  .login-link:hover {
+    background-color: #f4f0f0;
   }
 
   section {
