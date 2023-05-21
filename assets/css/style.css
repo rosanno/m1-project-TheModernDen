@@ -39,10 +39,7 @@ body {
 }
 
 /* reusable style */
-.blogs,
-.about,
-.testimonials,
-.subscribe {
+section {
   margin-top: 4em;
 }
 
@@ -87,14 +84,12 @@ body {
 }
 
 .login-item {
-  text-align: center;
   width: 90px;
 }
 
 .login-link,
 .login-link:hover {
   border-radius: 20px;
-  padding: 7px;
 }
 
 .login-link:hover {
@@ -446,6 +441,10 @@ body {
   object-fit: cover;
 }
 
+.contact-hero {
+  margin-top: 0 !important;
+}
+
 .overlay {
   background-color: rgba(63, 63, 63, 0.5);
   width: 100%;
@@ -487,20 +486,80 @@ body {
   margin-top: 4em;
 }
 
-.feather-sliders {
-  transform: rotate(270deg);
-  width: 20px;
-  height: 20px;
+.shop-header {
+  margin-top: 5px;
 }
 
-.filter-btn,
-.filter-btn:hover {
-  border: 2px solid var(--color-1);
+.results-heading {
+  font-weight: 300;
+  font-size: 0.9rem;
 }
 
-.filter-btn span {
-  font-size: var(--text-base);
-  font-weight: 600;
+.custom-select {
+  border: 0;
+  border-radius: 0;
+  padding: 5px 0px;
+  border-bottom: 1px solid #25385d;
+  font-size: 0.9rem;
+  font-weight: 300;
+  width: 240px;
+}
+
+.custom-select:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.category-list {
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.popular-tags {
+  padding: 0;
+}
+
+.popular-tags .tags-item,
+.category-list .category-item {
+  list-style: none;
+  font-weight: 300;
+}
+
+.popular-tags .tags-item {
+  padding: 3px 5px;
+  font-size: var(--text-sm);
+  cursor: pointer;
+  border: 1px solid #d1d1cd;
+  color: #8a8a89;
+  transition: 0.3s all ease-in-out;
+}
+
+.category-list .category-item {
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.category-list .category-item:hover,
+.popular-tags .tags-item:hover {
+  color: var(--color-1);
+}
+
+.popular-tags .tags-item:hover {
+  border: 1px solid var(--color-1);
+}
+
+.paginate-link {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 300;
+  margin: 3em 0;
+}
+
+.paginate-link:hover {
+  color: #000;
 }
 
 .custom-card-body {
@@ -593,7 +652,7 @@ body {
 /* media query */
 
 /* xs */
-@media (min-width: 375px) {
+@media (min-width: 475px) {
   .custom-card {
     width: 90%;
   }
@@ -656,9 +715,7 @@ body {
     padding: 0 10px;
   }
 
-  .feature,
-  .products,
-  .blogs {
+  section {
     margin-top: 8em;
   }
 
@@ -742,10 +799,7 @@ body {
     margin-top: 0.9em;
   }
 
-  .feature,
-  .products,
-  .blogs,
-  .about {
+  section {
     margin-top: 8em;
   }
 
@@ -835,12 +889,23 @@ body {
     font-size: var(--text-3xl);
   }
 
-  .feature,
-  .products,
-  .blogs,
-  .about,
-  .testimonials {
+  .login-item {
+    text-align: center;
+    width: 90px;
+  }
+
+  .login-link,
+  .login-link:hover {
+    border-radius: 20px;
+    padding: 7px;
+  }
+
+  section {
     margin-top: 8em;
+  }
+
+  .shop-header {
+    margin-top: 40px;
   }
 
   .about-subheading {
