@@ -795,8 +795,10 @@ section {
   }
 
   .hero__btn {
+    display: inline-block;
     font-size: var(--text-base);
-    margin-top: 0.9em;
+    margin-top: .9em;
+    text-decoration: none;
   }
 
   section {
